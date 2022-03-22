@@ -1,8 +1,9 @@
+import Template from './MainTemplate'
 
-export default function Main() {
-  return (
-    <div>
-
-    </div>
-  )
+const Main = () => {
+    return (
+        <Template />
+    )
 }
+
+export default Main;
