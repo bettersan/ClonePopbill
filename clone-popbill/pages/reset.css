@@ -5,7 +5,7 @@ fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
 article,section,aside,canvas,footer,header,nav,menu {margin : 0; padding : 0; box-sizing: border-box; vertical-align: middle;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display : block;}
 
-body{line-height: 1;}
+body{line-height: 1; font-family: Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo;}
 
 ol,ul{list-style: none;}
 i,em{font-style: normal;}

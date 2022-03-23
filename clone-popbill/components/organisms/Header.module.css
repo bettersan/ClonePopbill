@@ -1,13 +1,10 @@
-.header {padding : 0 0 0px; border-bottom : solid 1px #e6e6e6;}
+.header {padding : 0 0 0px; }
 
-.tnb{background-color : #f5f8fb; border-bottom : solid 1px #e6e6e6; padding : 5px 0; text-align: right;}
-.tnb .btn{font-size : 13px; background-color : #16416d; display : inline-block; color : #fff; padding : 6px 7px 4px; border-radius: 2px;}
-
-
-.gnb{width : 100%; padding : 20px 0;}
+.tnb{border-bottom : solid 1px #e6e6e6; padding : 25px 0 15px; background-color : #fff;}
+.gnb{border-bottom : solid 1px #e6e6e6; width : 100%; padding : 10px 0 15px; background-color : #fff;}
 .gnb .inner {display : flex; justify-content: space-between;}
-.gnb .logo{}
-.gnb .menu{margin : 3px 0 0 0;}
-.gnb .menu ul{display : flex;}
-.gnb .menu ul li{margin : 0 0 0 50px;}
+.gnb .menu{margin : 3px 0 0 0; width : 100%;}
+.gnb .menu ul{width:100%; display : flex; justify-content: space-between;}
+.gnb .menu ul li{}
 .gnb .menu ul li a{font-size : 17px; font-weight: bold; color : #222;}
+.mnb{text-align: right; padding : 8px 0; text-align: right; border-bottom : solid 1px #e6e6e6;}
