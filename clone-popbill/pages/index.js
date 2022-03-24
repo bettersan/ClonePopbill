@@ -1,3 +1,4 @@
+import 'react-app-polyfill/ie11'
 import Header from 'components/organisms/common/Header'
 import Footer from 'components/organisms/common/Footer'
 import MainContainer from 'components/organisms/MainContainer'
