@@ -1,6 +1,6 @@
-import Header from '../components/organisms/Header'
-import Footer from '../components/organisms/Footer'
-import MainContainer from '../components/organisms/MainContainer'
+import Header from 'components/organisms/common/Header'
+import Footer from 'components/organisms/common/Footer'
+import MainContainer from 'components/organisms/MainContainer'
 
 
 const Main = () => {

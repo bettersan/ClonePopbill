@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 1001",
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,6 +15,7 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.6",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0"
   }

@@ -5,7 +5,7 @@ const HeaderBtnStyled = Styled.a`
     font-size:13px;
     padding:7px 10px 8px;
     border-radius:2px;
-    margin : 0 0 0 10px;
+    margin : 0 10px 0 0;
     color : ${(props) => props.color || "#000"};
     background-color : ${(props) => props.bg || "#eee" };
 `;
