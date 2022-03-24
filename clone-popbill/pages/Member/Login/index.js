@@ -41,6 +41,7 @@ const LoginBanner = styled.div `width : 36.5%;`;
 
 const Login = () =>{
     function temp(e){
+        console.log(e);
         console.log(e.code);
         console.log(e.keyCode);
     }
