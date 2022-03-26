@@ -1,3 +1,4 @@
+import {useState, useEffect} from 'react';
 import Header from 'components/organisms/common/Header'
 import Footer from 'components/organisms/common/Footer'
 import Input from 'components/atoms/Input'
@@ -40,10 +41,18 @@ const LoginBtn = styled.a`
 const LoginBanner = styled.div `width : 36.5%;`;
 
 const Login = () =>{
-    function temp(e){
-        console.log(e);
-        console.log(e.code);
-        console.log(e.keyCode);
+    const [inputId, setInputId] = useState('');
+    const [inputPw, setInputPw] = useState('');
+
+    const handleKeyDown = (e) => {
+        if(e.keyCode === 13){
+
+        }
+    }
+
+    const loginSubmit = () =>{
+        console.log(inputId);
+        console.log(inputPw);
     }
 
     return (
@@ -52,7 +61,7 @@ const Login = () =>{
             <LoginContainer className="container">
                 <div className="inner">
                     <LoginBox>
-                        <LoginForm onKeyDown={(e) => {temp(e)}}>
+                        <LoginForm onKeyDown={(e) => {handleKeyDown(e)}}>
                             <h2>로그인</h2>
                             <Input 
                                 type="text" 
@@ -61,6 +70,7 @@ const Login = () =>{
                                 padding="0 0 0 15px"
                                 fontSize="15px"
                                 margin="0 0 15px 0"
+                                onChange={(e) => { setInputId(e.target.value) }}
                             />
                             <Input
                                 type="password"
@@ -68,8 +78,9 @@ const Login = () =>{
                                 height="48px"
                                 padding="0 0 0 15px"
                                 fontSize="15px"
+                                onChange={(e) => {setInputPw(e.target.value)}}
                             />
-                            <LoginBtn>로그인</LoginBtn>
+                            <LoginBtn onClick={loginSubmit}>로그인</LoginBtn>
                         </LoginForm>
                         <LoginBanner>
                             <a href="/Taxinvoice">

@@ -21,6 +21,7 @@ const Input = (props) =>{
             display={props.display}
             fontSize={props.fontSize}
             margin={props.margin}
+            onChange={props.onChange}
         />
     )
 }
