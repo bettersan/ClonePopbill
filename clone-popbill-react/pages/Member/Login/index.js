@@ -46,7 +46,7 @@ const Login = () =>{
 
     const handleKeyDown = (e) => {
         if(e.keyCode === 13){
-
+            loginSubmit();
         }
     }
 
