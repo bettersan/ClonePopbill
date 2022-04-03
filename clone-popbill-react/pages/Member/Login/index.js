@@ -51,8 +51,23 @@ const Login = () =>{
     }
 
     const loginSubmit = () =>{
-        console.log(inputId);
-        console.log(inputPw);
+        requestLogin(inputId, inputPw);
+    }
+
+    const requestLogin = (id, pw) =>{
+        fetch("http://localhost:3100/login", {
+            method : "POST",
+            headers : {"Content-type : application/json"},
+            body : JSON.stringify({
+                id : id,
+                pw : pw
+            })
+        })
+        .then(response => response.json)
+        .then(response => {
+            console.log(response);
+            console.log("TODO : fetch API 사용해서 3100 REST Controller와 통신하기")
+        })
     }
 
     return (
