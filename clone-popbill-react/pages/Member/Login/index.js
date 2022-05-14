@@ -3,6 +3,7 @@ import Header from 'components/organisms/common/Header'
 import Footer from 'components/organisms/common/Footer'
 import Input from 'components/atoms/Input'
 import styled from 'styled-components'
+import axios from 'axios'
 
 const LoginContainer = styled.div` 
     padding:30px 0; 
@@ -51,10 +52,30 @@ const Login = () =>{
     }
 
     const loginSubmit = () =>{
-        // requestLogin(inputId, inputPw);
+        requestLogin(inputId, inputPw);
     }
 
     const requestLogin = (id, pw) =>{
+        const loginData = {
+            "id" : id,
+            "pw" : pw
+        }
+        try{
+            axios.post("/login", JSON.stringify(loginData), {
+                headers : {
+                    "Conent-Type" : `application/json`
+                }
+            }).then(response => {
+                console.log("response.data.accessToken : " + response.data);
+                axios.defaults.headers.common['Authorization'] = 'Bearer ' + response.data;
+            }).catch(exception => {
+                console.log("login result fail : " + exception);
+            })
+            
+        }catch(e){
+            console.log(e);
+        }
+
     }
 
     return (
